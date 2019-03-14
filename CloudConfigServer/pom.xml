@@ -64,6 +64,35 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.4.11</version>
+				<configuration>
+					<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+					<dockerDirectory>src/main/resources/docker</dockerDirectory>
+					<!--<dockerHost>http://172.17.0.1:2375</dockerHost> -->
+
+					<!--overwrite tags every time image is built with docker:build -->
+					<forceTags>true</forceTags>
+					<imageTags>
+						<imageTag>${project.version}</imageTag>
+						<imageTag>latest</imageTag>
+					</imageTags>
+
+					<!-- You should do this in deploy phase or use -DskipDockerPush -->
+					<serverId>docker-hub</serverId>
+					<registryUrl>https://hub.docker.com/</registryUrl>
+					<resources>
+						<resource>
+							<targetPath></targetPath>
+							<directory>${project.build.directory}</directory>
+							<include>${project.build.finalName}.war</include>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
