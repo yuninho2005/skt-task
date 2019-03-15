@@ -71,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+            <state relative-caret-position="360">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -83,8 +83,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/IndexControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+            <state relative-caret-position="435">
+              <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,6 +147,7 @@
         <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/WebLayerTest.java" />
         <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java" />
+        <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/IndexControllerTest.java" />
       </list>
     </option>
   </component>
@@ -207,6 +211,23 @@
               <item name="SktTask" type="462c0819:PsiDirectoryNode" />
               <item name="management-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,7 +273,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552676821018" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552677827388" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -340,7 +361,7 @@
       <option name="presentableId" value="Default" />
       <updated>1552602886188</updated>
       <workItem from="1552602889627" duration="13267000" />
-      <workItem from="1552659101551" duration="9460000" />
+      <workItem from="1552659101551" duration="10057000" />
     </task>
     <servers />
   </component>
@@ -350,7 +371,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22727000" />
+    <option name="totallyTimeSpent" value="23324000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,8 +558,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="49" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
+        <state relative-caret-position="360">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="24" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/IndexControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
