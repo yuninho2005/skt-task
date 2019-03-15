@@ -17,11 +17,9 @@ kafkaserver:
   #  - /var/run/docker.sock:/var/run/docker.sock # Really need this?
 
 
-tomcatserver:
+cloudconfigserver:
   image: skt/cloud-config-server:latest
-  container_name: tomcat
-  links:
-    - kafkaserver:kafka
+  container_name: tomcat-cloud-config-server
   ports:
-    - 8081
-  hostname: tomcat
+    - 8888
+  hostname: cloud-config-server
