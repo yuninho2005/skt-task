@@ -17,6 +17,10 @@ public class ApplicationTest {
 
     @Test
     public void contexLoads() throws Exception {
+    }
+
+    @Test
+    public void productControllerLoaded() throws Exception {
         assertThat(productController).isNotNull();
     }
 }
