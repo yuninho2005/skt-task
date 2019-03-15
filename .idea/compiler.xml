@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-config-server" />
         <module name="common-library" />
+        <module name="management-app" />
       </profile>
     </annotationProcessing>
   </component>
