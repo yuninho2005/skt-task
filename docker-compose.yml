@@ -1,0 +1,27 @@
+zookeeper:
+  image: saumitras01/zookeeper:v3.4.9
+  ports:
+    - "2181:2181"
+
+kafkaserver:
+  image: saumitras01/kafka:latest
+  ports:
+    - "9092:9092"
+  depends_on:
+    - zookeeper
+  environment:
+    KAFKA_ADVERTISED_HOST_NAME: kafka
+    KAFKA_ADVERTISED_PORT: "9092"
+    KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+  #volumes:
+  #  - /var/run/docker.sock:/var/run/docker.sock # Really need this?
+
+
+tomcatserver:
+  image: skt/cloud-config-server:latest
+  container_name: tomcat
+  links:
+    - kafkaserver:kafka
+  ports:
+    - 8081
+  hostname: tomcat
