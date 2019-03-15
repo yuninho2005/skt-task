@@ -34,11 +34,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/management-app/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="813">
@@ -74,10 +69,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/WebLayerTest.java">
+        <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+              <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/WebLayerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,6 +135,7 @@
         <option value="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/ManagementAppApplication.java" />
         <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/integration/HttpRequestTest.java" />
         <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/WebLayerTest.java" />
       </list>
     </option>
   </component>
@@ -246,7 +254,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552674158389" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552674534650" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -334,7 +342,7 @@
       <option name="presentableId" value="Default" />
       <updated>1552602886188</updated>
       <workItem from="1552602889627" duration="13267000" />
-      <workItem from="1552659101551" duration="7985000" />
+      <workItem from="1552659101551" duration="8327000" />
     </task>
     <servers />
   </component>
@@ -344,7 +352,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21252000" />
+    <option name="totallyTimeSpent" value="21594000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -503,6 +511,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/WebLayerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
