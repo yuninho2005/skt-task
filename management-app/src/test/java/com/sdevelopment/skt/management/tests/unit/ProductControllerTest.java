@@ -1,5 +1,7 @@
 package com.sdevelopment.skt.management.tests.unit;
 
+import com.sdevelopment.skt.management.controller.ProductController;
+import com.sdevelopment.skt.management.service.ProductService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +30,7 @@ public class ProductControllerTest {
     private ProductService productService;
 
     @Test
-    public void shouldRenderCreateProductPage throws Exception {
+    public void shouldRenderCreateProductPage() throws Exception {
         //when(productService.greet()).thenReturn("Hello Mock");
         this.mockMvc.perform(get("/create-product")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello Mock")));

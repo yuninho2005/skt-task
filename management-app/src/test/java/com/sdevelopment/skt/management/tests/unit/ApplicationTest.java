@@ -1,5 +1,6 @@
 package com.sdevelopment.skt.management.tests.unit;
 
+import com.sdevelopment.skt.management.controller.ProductController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
