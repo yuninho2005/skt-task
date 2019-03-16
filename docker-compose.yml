@@ -1,6 +1,14 @@
-cloudconfigserver:
-  image: skt/cloud-config-server:latest
-  container_name: tomcat-cloud-config-server
-  ports:
-    - 8888
-  hostname: cloud-config-server
+services:
+  postgres:
+    image: postgres
+    volumes:
+    - db-data:/var/lib/postgresql/data
+    ports:
+    - 5432:5432
+
+  cloudconfigserver:
+    image: skt/cloud-config-server:latest
+    container_name: tomcat-cloud-config-server
+    ports:
+      - 8888
+    hostname: cloud-config-server
