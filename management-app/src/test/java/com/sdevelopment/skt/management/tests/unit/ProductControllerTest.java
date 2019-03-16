@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
@@ -36,7 +37,25 @@ public class ProductControllerTest {
 
     @Test
     public void shouldRenderListProductsPage() throws Exception {
-        this.mockMvc.perform(get("/products")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/products"))
+                .andDo(print())
+                .andExpect(status().isOk())
                 .andExpect(view().name("listProducts"));
+    }
+
+    @Test
+    public void createProductFormSubmitSuccess() throws Exception {
+        this.mockMvc.perform(post("/product-form").param("name","New Product"))
+                    .andExpect(status().isOk())
+                    .andExpect(redirectedUrl("/products"));
+    }
+
+    @Test
+    public void createProductFormSubmitError() throws Exception {
+        this.mockMvc.perform(post("/product-form").param("name","New Product"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("newProduct"))
+                .andExpect(model().errorCount(1))
+                .andExpect(model().attributeHasFieldErrors("name"));
     }
 }
