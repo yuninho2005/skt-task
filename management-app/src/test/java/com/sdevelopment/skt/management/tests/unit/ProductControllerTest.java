@@ -16,8 +16,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @RunWith(SpringRunner.class)
 @WebMvcTest(ProductController.class)
@@ -31,8 +30,13 @@ public class ProductControllerTest {
 
     @Test
     public void shouldRenderCreateProductPage() throws Exception {
-        //when(productService.greet()).thenReturn("Hello Mock");
         this.mockMvc.perform(get("/create-product")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello Mock")));
+                .andExpect(view().name("newProduct"));
+    }
+
+    @Test
+    public void shouldRenderListProductsPage() throws Exception {
+        this.mockMvc.perform(get("/products")).andDo(print()).andExpect(status().isOk())
+                .andExpect(view().name("listProducts"));
     }
 }
