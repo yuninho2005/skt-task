@@ -1,14 +1,30 @@
+version: '3'
 services:
   postgres:
     image: postgres
+    environment:
+      POSTGRES_PASSWORD: sktouch
     volumes:
     - db-data:/var/lib/postgresql/data
     ports:
     - 5432:5432
 
+  pgadmin4:
+    image: dpage/pgadmin4
+    ports:
+      - 80:80
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@localhost
+      PGADMIN_DEFAULT_PASSWORD: s3cr3t
+
+
   cloudconfigserver:
     image: skt/cloud-config-server:latest
     container_name: tomcat-cloud-config-server
     ports:
-      - 8888
+      - 8888:8888
     hostname: cloud-config-server
+
+volumes:
+  db-data:
+    driver: local
