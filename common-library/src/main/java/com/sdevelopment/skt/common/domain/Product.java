@@ -1,18 +1,20 @@
 package com.sdevelopment.skt.common.domain;
 
+import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@Table(name = "employees")
-@Data
+@Table(name = "products")
+//@Data
 @NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "getAllEmployees",
-                procedureName = "get_all_employees",
-                resultClasses = Product.class)
-})
-@NamedStoredProcedureQueries({
-        @NamedStoredProcedureQuery(name = "getAllEmployees",
-                procedureName = "get_all_employees",
+        @NamedStoredProcedureQuery(name = "saveProduct",
+                procedureName = "insertproductsp",
+                parameters = {
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "_name", type = String.class)
+                }),
+
+        @NamedStoredProcedureQuery(name = "getAllProducts",
+                procedureName = "listproductssp",
                 resultClasses = Product.class)
 })
 public class Product implements Serializable {
