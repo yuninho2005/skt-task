@@ -15,6 +15,7 @@
         <module>common-library</module>
         <module>cloud-config-server</module>
         <module>management-app</module>
+        <module>microservice-app</module>
     </modules>
 
     <parent>
