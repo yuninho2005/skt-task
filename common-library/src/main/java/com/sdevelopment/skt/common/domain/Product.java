@@ -18,7 +18,11 @@ import java.io.Serializable;
                 resultClasses = Product.class)
 })
 public class Product implements Serializable {
+    @Id
+    @Column(name = "id")
     private Integer id;
+
+    @Column(name = "name")
     private String name;
 
     public Product() {
