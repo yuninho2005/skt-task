@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a0f33d8-8b03-4de7-bac0-cc894ea1bd75" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,17 +31,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/microservice-app/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="467">
               <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/management-app/pom.xml">
+        <entry file="file://$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1389">
-              <caret line="97" column="12" selection-start-line="20" selection-start-column="4" selection-end-line="97" selection-end-column="12" />
+            <state relative-caret-position="225">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -84,10 +82,10 @@
         <option value="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java" />
         <option value="$PROJECT_DIR$/common-library/pom.xml" />
-        <option value="$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java" />
         <option value="$PROJECT_DIR$/management-app/pom.xml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/microservice-app/pom.xml" />
+        <option value="$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java" />
       </list>
     </option>
   </component>
@@ -136,7 +134,37 @@
             <path>
               <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="common-library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="common-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="common-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="common-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="common-library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
@@ -159,7 +187,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552853451302" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552854590214" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -292,7 +320,7 @@
       <workItem from="1552602889627" duration="13267000" />
       <workItem from="1552659101551" duration="16903000" />
       <workItem from="1552746252994" duration="13437000" />
-      <workItem from="1552851834743" duration="1289000" />
+      <workItem from="1552851834743" duration="2153000" />
     </task>
     <servers />
   </component>
@@ -320,7 +348,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44896000" />
+    <option name="totallyTimeSpent" value="45760000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,23 +595,6 @@
     <entry file="file://$PROJECT_DIR$/common-library/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-          <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common-library/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -612,9 +623,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-app/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="467">
           <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
         </state>
       </provider>

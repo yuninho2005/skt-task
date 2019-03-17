@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/cloud-config-server" />
     <file type="web" url="file://$PROJECT_DIR$/management-app" />
+    <file type="web" url="file://$PROJECT_DIR$/microservice-app" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

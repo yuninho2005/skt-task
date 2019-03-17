@@ -1,6 +1,21 @@
 package com.sdevelopment.skt.common.domain;
 
-public class Product {
+import java.io.Serializable;
+
+@Entity
+@Table(name = "employees")
+@Data
+@NamedStoredProcedureQueries({
+        @NamedStoredProcedureQuery(name = "getAllEmployees",
+                procedureName = "get_all_employees",
+                resultClasses = Product.class)
+})
+@NamedStoredProcedureQueries({
+        @NamedStoredProcedureQuery(name = "getAllEmployees",
+                procedureName = "get_all_employees",
+                resultClasses = Product.class)
+})
+public class Product implements Serializable {
     private Integer id;
     private String name;
 
