@@ -9,6 +9,7 @@
         <module name="cloud-config-server" />
         <module name="common-library" />
         <module name="management-app" />
+        <module name="microservice-app" />
       </profile>
     </annotationProcessing>
   </component>
