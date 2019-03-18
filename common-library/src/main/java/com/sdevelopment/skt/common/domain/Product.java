@@ -1,7 +1,9 @@
 package com.sdevelopment.skt.common.domain;
 
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
+
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
@@ -23,8 +25,9 @@ public class Product implements Serializable {
     @Column(name = "id")
     private Integer id;
 
-    @NotNull
     @Column(name = "name")
+    //@NotEmpty(message = "Name may not be empty")
+    @NotBlank(message = "Name may not be empty")
     private String name;
 
     public Product() {
