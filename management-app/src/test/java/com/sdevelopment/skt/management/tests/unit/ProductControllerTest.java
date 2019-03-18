@@ -54,8 +54,8 @@ public class ProductControllerTest {
     public void createProductFormSubmitError() throws Exception {
         this.mockMvc.perform(post("/product-form").param("name",""))
                 .andExpect(status().isOk())
-                .andExpect(view().name("newProduct"))
+                .andExpect(view().name("formError"))
                 .andExpect(model().errorCount(1))
-                .andExpect(model().attributeHasFieldErrors("name"));
+                .andExpect(model().attributeHasFieldErrors("product"));
     }
 }

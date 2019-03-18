@@ -27,8 +27,10 @@ public class ProductController {
     @RequestMapping(value = "/product-form", method = RequestMethod.POST)
     public String processNewProduct(@Valid @ModelAttribute("product")Product product,
                                     BindingResult result, ModelMap model) {
-        product.getName();
-        System.out.println(product.getName());
+
+        if (result.hasErrors()) {
+            return "formError";
+        }
 
         return "listProducts";
     }
