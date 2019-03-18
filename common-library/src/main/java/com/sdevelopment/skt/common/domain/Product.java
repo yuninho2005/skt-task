@@ -1,8 +1,7 @@
 package com.sdevelopment.skt.common.domain;
 
-import com.sun.istack.internal.NotNull;
-
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 @Entity
