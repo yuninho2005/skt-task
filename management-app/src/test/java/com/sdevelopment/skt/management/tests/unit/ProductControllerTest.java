@@ -47,12 +47,12 @@ public class ProductControllerTest {
     public void createProductFormSubmitSuccess() throws Exception {
         this.mockMvc.perform(post("/product-form").param("name","New Product"))
                     .andExpect(status().isOk())
-                    .andExpect(redirectedUrl("/products"));
+                    .andExpect(view().name("listProducts"));
     }
 
     @Test
     public void createProductFormSubmitError() throws Exception {
-        this.mockMvc.perform(post("/product-form").param("name","New Product"))
+        this.mockMvc.perform(post("/product-form").param("name",""))
                 .andExpect(status().isOk())
                 .andExpect(view().name("newProduct"))
                 .andExpect(model().errorCount(1))

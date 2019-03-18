@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0f33d8-8b03-4de7-bac0-cc894ea1bd75" name="Default Changelist" comment="" />
+    <list default="true" id="9a0f33d8-8b03-4de7-bac0-cc894ea1bd75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/common-library/target/" />
@@ -28,7 +32,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
+            <state relative-caret-position="360">
               <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -37,27 +41,41 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/service/ProductServiceImplIntegrationTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="768">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="798">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/dao/ProductRepositoryIntegrationTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF/views/newProduct.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+            <state relative-caret-position="150">
+              <caret line="10" column="65" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF/views/listProducts.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#369#370#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,16 +114,17 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java" />
         <option value="$PROJECT_DIR$/management-app/pom.xml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
-        <option value="$PROJECT_DIR$/microservice-app/pom.xml" />
         <option value="$PROJECT_DIR$/common-library/pom.xml" />
         <option value="$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java" />
         <option value="$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/dao/ProductRepositoryTest.java" />
         <option value="$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/service/ProductServiceImplIntegrationTest.java" />
         <option value="$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/dao/ProductRepositoryIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/microservice-app/pom.xml" />
+        <option value="$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF/views/newProduct.jsp" />
+        <option value="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java" />
+        <option value="$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java" />
       </list>
     </option>
   </component>
@@ -155,41 +174,6 @@
             <path>
               <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="common-library" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="common-library" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="common-library" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="common-library" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="common-library" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
               <item name="management-app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,72 +209,83 @@
             <path>
               <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
               <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="microservice" type="462c0819:PsiDirectoryNode" />
+              <item name="management" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="integration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SktTask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SktTask" type="462c0819:PsiDirectoryNode" />
+              <item name="management-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,7 +303,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552927288964" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552934464456" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -317,20 +312,20 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/management-app/src/main/webapp" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.sdevelopment.skt.microservice.dao" />
       <recent name="com.sdevelopment.skt.management.tests.integration" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/common-library" />
       <recent name="$PROJECT_DIR$/management-app/src/main/resources/META-INF/resources/WEB-INF/views" />
       <recent name="$PROJECT_DIR$/management-app/src/main/resources" />
       <recent name="$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management" />
-      <recent name="$PROJECT_DIR$/management-app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/management-app/src/main/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -406,6 +401,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductControllerTest.createProductFormSubmitSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="management-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sdevelopment.skt.management.tests.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sdevelopment.skt.management.tests.unit" />
+      <option name="MAIN_CLASS_NAME" value="com.sdevelopment.skt.management.tests.unit.ProductControllerTest" />
+      <option name="METHOD_NAME" value="createProductFormSubmitSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CloudConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.sdevelopment.skt.ccserver.CloudConfigServerApplication" />
@@ -423,6 +434,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ProductControllerTest" />
+        <item itemvalue="JUnit.ProductControllerTest.createProductFormSubmitSuccess" />
         <item itemvalue="JUnit.IndexControllerTest" />
         <item itemvalue="JUnit.HttpRequestTest" />
         <item itemvalue="JUnit.ApplicationTest" />
@@ -443,35 +455,44 @@
       <workItem from="1552659101551" duration="16903000" />
       <workItem from="1552746252994" duration="13437000" />
       <workItem from="1552851834743" duration="4569000" />
-      <workItem from="1552924968262" duration="1593000" />
+      <workItem from="1552924968262" duration="6182000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApplicationTest - 2019.03.15 at 10h 59m 37s.xml">
-      <configuration name="ApplicationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IndexControllerTest - 2019.03.15 at 12h 56m 44s.xml">
-      <configuration name="IndexControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IndexControllerTest - 2019.03.16 at 08h 47m 07s.xml">
-      <configuration name="IndexControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductControllerTest - 2019.03.16 at 08h 58m 04s.xml">
+    <history-entry file="ProductControllerTest - 2019.03.18 at 10h 45m 14s.xml">
       <configuration name="ProductControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest - 2019.03.16 at 09h 04m 45s.xml">
+    <history-entry file="ProductControllerTest_createProductFormSubmitSuccess - 2019.03.18 at 10h 50m 33s.xml">
+      <configuration name="ProductControllerTest.createProductFormSubmitSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductControllerTest - 2019.03.18 at 11h 11m 31s.xml">
       <configuration name="ProductControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest - 2019.03.16 at 09h 05m 43s.xml">
+    <history-entry file="ProductControllerTest_createProductFormSubmitSuccess - 2019.03.18 at 11h 14m 00s.xml">
+      <configuration name="ProductControllerTest.createProductFormSubmitSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductControllerTest - 2019.03.18 at 11h 27m 03s.xml">
       <configuration name="ProductControllerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductControllerTest - 2019.03.16 at 10h 14m 07s.xml">
+    <history-entry file="ProductControllerTest_createProductFormSubmitSuccess - 2019.03.18 at 11h 27m 10s.xml">
+      <configuration name="ProductControllerTest.createProductFormSubmitSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductControllerTest - 2019.03.18 at 11h 27m 17s.xml">
+      <configuration name="ProductControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductControllerTest_createProductFormSubmitSuccess - 2019.03.18 at 11h 27m 51s.xml">
+      <configuration name="ProductControllerTest.createProductFormSubmitSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductControllerTest_createProductFormSubmitSuccess - 2019.03.18 at 11h 30m 37s.xml">
+      <configuration name="ProductControllerTest.createProductFormSubmitSuccess" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ProductControllerTest - 2019.03.18 at 11h 35m 21s.xml">
       <configuration name="ProductControllerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49769000" />
+    <option name="totallyTimeSpent" value="54358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -486,7 +507,7 @@
     <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.2625133" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988399" visible="true" weight="0.2625133" />
       <window_info id="Structure" order="1" sideWeight="0.5011601" side_tool="true" weight="0.2973138" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -496,7 +517,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47795823" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4777202" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -640,16 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/IndexControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="5" selection-start-line="26" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/WebLayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -664,40 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/IndexController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#509#510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,13 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/microservice-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/ManagementAppApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -753,20 +723,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/service/ProductServiceImplIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+          <caret line="55" column="12" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#514#515#0" expanded="true" />
@@ -775,10 +735,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/microservice-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/microservice-app/src/test/java/com/sdevelopment/skt/microservice/dao/ProductRepositoryIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="41" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/IndexControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="5" selection-start-line="26" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF/views/listProducts.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-library/src/main/java/com/sdevelopment/skt/common/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/main/webapp/WEB-INF/views/newProduct.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="65" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/main/java/com/sdevelopment/skt/management/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/management-app/src/test/java/com/sdevelopment/skt/management/tests/unit/ProductControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="52" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
