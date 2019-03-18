@@ -1,5 +1,7 @@
 package com.sdevelopment.skt.common.domain;
 
+import com.sun.istack.internal.NotNull;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -22,6 +24,7 @@ public class Product implements Serializable {
     @Column(name = "id")
     private Integer id;
 
+    @NotNull
     @Column(name = "name")
     private String name;
 
