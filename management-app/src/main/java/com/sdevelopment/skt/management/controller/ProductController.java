@@ -27,7 +27,16 @@ public class ProductController {
 
     @RequestMapping("/products")
     public String listProducts(ModelMap model) {
-        List<Product> products = new LinkedList<>(); // Initially empty
+        List<Product> products = new LinkedList<>();
+
+        Product p1 = new Product();
+        p1.setName("Product 1");
+
+        Product p2 = new Product();
+        p1.setName("Product 2");
+
+        products.add(p1);
+        products.add(p2); // Two elements just to show in the view.
 
         model.addAttribute("products", products);
 
