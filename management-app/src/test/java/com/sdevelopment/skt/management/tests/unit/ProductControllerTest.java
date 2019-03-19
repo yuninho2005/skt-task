@@ -42,6 +42,7 @@ public class ProductControllerTest {
         this.mockMvc.perform(get("/products"))
                 .andDo(print())
                 .andExpect(status().isOk())
+                .andExpect(model().attributeExists("products"))
                 .andExpect(view().name("listProducts"));
     }
 
