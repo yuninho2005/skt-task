@@ -31,7 +31,9 @@ public class ProductControllerTest {
 
     @Test
     public void shouldRenderCreateProductPage() throws Exception {
-        this.mockMvc.perform(get("/create-product")).andDo(print()).andExpect(status().isOk())
+        this.mockMvc.perform(get("/create-product"))
+                .andDo(print()).andExpect(status().isOk())
+                .andExpect(model().attributeExists("product"))
                 .andExpect(view().name("newProduct"));
     }
 
