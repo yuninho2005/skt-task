@@ -1,6 +1,8 @@
 package com.sdevelopment.skt.microservice.service;
 
 import com.sdevelopment.skt.common.domain.Product;
+import com.sdevelopment.skt.microservice.dao.ProductRepository;
+import com.sdevelopment.skt.microservice.service.impl.ProductServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -10,6 +12,9 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -41,19 +46,30 @@ public class ProductServiceImplIntegrationTest {
 
     @Before
     public void setUp() {
-        Product product = new Product();
-        product.setName("product 1");
+        List<Product> products = new ArrayList<>();
 
-        Mockito.when(productRepository.findByName(product.getName()))
-                .thenReturn(product);
+        Product product = new Product();
+        product.setName("product test");
+
+        products.add(product);
+
+        Mockito.when(productRepository.getAllProducts())
+                .thenReturn(products);
     }
 
     @Test
-    public void whenValidNameThenProductShouldBeFound() {
-        String name = "alex";
-        Product found = productService.getProductByName(name);
+    public void whenGetAllProducts_thenReturnProductList() {
+        // given
+        Product product = new Product();
+        product.setName("product test");
 
-        assertThat(found.getName())
-                .isEqualTo(name);
+        productService.saveProduct(product);
+
+        // when
+        List<Product> products = productRepository.getAllProducts();
+
+        // then
+        assertThat(products.size())
+                .isEqualTo(1);
     }
 }
