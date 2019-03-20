@@ -5,6 +5,7 @@ import com.sdevelopment.skt.microservice.dao.impl.ProductRepositoryImpl;
 import com.sdevelopment.skt.microservice.service.ProductService;
 import com.sdevelopment.skt.microservice.service.impl.ProductServiceImpl;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
@@ -52,7 +53,8 @@ public class ProductRepositoryIntegrationTest {
                 .thenReturn(products);
     }
 
-    //@Test
+    @Ignore
+    @Test
     public void whenGetAllProducts_thenReturnProductList() {
         // given
         Product product = new Product();
