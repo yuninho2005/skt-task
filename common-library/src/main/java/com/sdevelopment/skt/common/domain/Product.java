@@ -1,7 +1,6 @@
 package com.sdevelopment.skt.common.domain;
 
 import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -22,11 +21,8 @@ import java.io.Serializable;
 })
 public class Product implements Serializable {
     @Id
-    @Column(name = "id")
     private Integer id;
 
-    @Column(name = "name")
-    //@NotEmpty(message = "Name may not be empty")
     @NotBlank(message = "Name may not be empty")
     private String name;
 
