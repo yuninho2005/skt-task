@@ -17,6 +17,17 @@ services:
       PGADMIN_DEFAULT_EMAIL: postgres@localhost
       PGADMIN_DEFAULT_PASSWORD: s3cr3t
 
+  rabbitmq:
+    image: "rabbitmq:3.7.13-management-alpine"
+    hostname: "rabbit"
+    ports:
+      - "9090:15672"
+      - "5677:5672"
+    labels:
+      NAME: "rabbitmq"
+    volumes:
+      - db-data:/var/lib/rabbitmq/mnesia/rabbit@rabbit
+
 
   cloudconfigserver:
     image: skt/cloud-config-server:latest
@@ -27,4 +38,7 @@ services:
 
 volumes:
   db-data:
+    driver: local
+
+  rabbit-data:
     driver: local
