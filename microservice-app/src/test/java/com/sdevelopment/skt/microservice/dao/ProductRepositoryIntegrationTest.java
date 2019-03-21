@@ -4,25 +4,32 @@ import com.sdevelopment.skt.common.domain.Product;
 import com.sdevelopment.skt.microservice.dao.impl.ProductRepositoryImpl;
 import com.sdevelopment.skt.microservice.service.ProductService;
 import com.sdevelopment.skt.microservice.service.impl.ProductServiceImpl;
+import org.hibernate.jpa.internal.EntityManagerImpl;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
-@DataJpaTest
+//@DataJpaTest
+//@ActiveProfiles("test")
 public class ProductRepositoryIntegrationTest {
 
     @TestConfiguration
@@ -32,45 +39,27 @@ public class ProductRepositoryIntegrationTest {
         public ProductRepository productRepository() {
             return new ProductRepositoryImpl();
         }
+
     }
 
-    @Autowired
-    private TestEntityManager entityManager;
+    @PersistenceContext
+    private EntityManager entityManager;
 
     @Autowired
     private ProductRepository productRepository;
 
-    //@Before
-    public void setUp() {
-        List<Product> products = new ArrayList<>();
+    @Test
+    public void afterSavingCountShouldIncrease() {
+        List<Product> before = productRepository.getAllProducts();
 
         Product product = new Product();
         product.setName("product test");
 
-        products.add(product);
+        productRepository.saveProduct(product);
 
-        Mockito.when(productRepository.getAllProducts())
-                .thenReturn(products);
+        List<Product> after = productRepository.getAllProducts();
+
+        assertThat(before.size())
+                .isEqualTo(after.size() + 1);
     }
-
-    @Ignore
-    @Test
-    public void whenGetAllProducts_thenReturnProductList() {
-        // given
-        Product product = new Product();
-        product.setName("product test");
-
-        entityManager.persist(product);
-        entityManager.flush();
-
-        // when
-        List<Product> products = productRepository.getAllProducts();
-
-        // then
-        assertThat(products.size())
-                .isEqualTo(1);
-    }
-
-    @Test
-    public void emptyTestForNow() {}
 }
