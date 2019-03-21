@@ -31,7 +31,7 @@ public class MicroserviceApplication {
 
     @Bean
     Queue queue() {
-        return new Queue(receivingQueue, false);
+        return new Queue(receivingQueue, true);
     }
 
     @Bean
