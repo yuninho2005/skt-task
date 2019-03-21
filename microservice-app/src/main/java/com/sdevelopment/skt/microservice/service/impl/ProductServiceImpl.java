@@ -16,11 +16,12 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public void saveProduct(Product product) {
-
+        productRepository.saveProduct(product);
     }
 
     @Override
     public List<Product> getAllProducts() {
-        return null;
+
+        return productRepository.getAllProducts();
     }
 }
