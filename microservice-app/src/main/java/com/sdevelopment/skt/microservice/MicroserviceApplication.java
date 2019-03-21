@@ -36,7 +36,7 @@ public class MicroserviceApplication {
 
     @Bean
     DirectExchange exchange() {
-        return new DirectExchange("spring-boot-exchange");
+        return new DirectExchange(exchange);
     }
 
     @Bean
