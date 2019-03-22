@@ -16,7 +16,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
-public class ManagementAppApplication extends SpringBootServletInitializer {
+public class ManagementAppApplication {
 
     /*@Override
     protected SpringApplicationBuilder configure (SpringApplicationBuilder builder) {

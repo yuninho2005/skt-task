@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -31,6 +32,9 @@ public class ProductServiceImplIntegrationTest {
 
     @Autowired
     private ProductService productService;
+
+    @MockBean
+    private RabbitTemplate rabbitTemplate;
 
 
     @Test
