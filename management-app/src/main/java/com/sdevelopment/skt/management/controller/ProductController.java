@@ -1,6 +1,8 @@
 package com.sdevelopment.skt.management.controller;
 
 import com.sdevelopment.skt.common.domain.Product;
+import com.sdevelopment.skt.management.service.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -16,6 +18,9 @@ import java.util.Map;
 
 @Controller
 public class ProductController {
+
+    @Autowired
+    private ProductService productService;
 
     @RequestMapping("/create-product")
     public String createProduct(ModelMap model) {
@@ -50,6 +55,8 @@ public class ProductController {
         if (result.hasErrors()) {
             return "formError";
         }
+
+        productService.saveProduct(product);
 
         return "listProducts";
     }
