@@ -36,6 +36,13 @@ services:
       - 8888:8888
     hostname: cloud-config-server
 
+  magementapp:
+    image: skt/management-app:latest
+    container_name: management-app-server
+    ports:
+      - 8081:8080
+    hostname: management-app
+
 volumes:
   db-data:
     driver: local
