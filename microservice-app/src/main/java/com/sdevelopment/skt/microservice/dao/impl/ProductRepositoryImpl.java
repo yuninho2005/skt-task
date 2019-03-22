@@ -15,14 +15,17 @@ public class ProductRepositoryImpl implements ProductRepository {
     private EntityManager em;
 
     public void saveProduct(Product product) {
-        StoredProcedureQuery saveProductProcedure =
-                em.createNamedStoredProcedureQuery("saveProduct");
+        StoredProcedureQuery saveProductProcedure = em.createNamedStoredProcedureQuery("saveProduct");
+        saveProductProcedure.setParameter("_name", product.getName());
+
         saveProductProcedure.execute();
     }
 
     public List<Product> getAllProducts() {
-        StoredProcedureQuery findAllProcedure =
-                em.createNamedStoredProcedureQuery("getAllProducts");
+        StoredProcedureQuery findAllProcedure = em.createNamedStoredProcedureQuery("getAllProducts");
+
+        findAllProcedure.execute();
+
         return findAllProcedure.getResultList();
     }
 }
