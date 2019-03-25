@@ -3,6 +3,7 @@ package com.sdevelopment.skt.microservice.dao.impl;
 import com.sdevelopment.skt.common.domain.Product;
 import com.sdevelopment.skt.microservice.dao.ProductRepository;
 import com.sdevelopment.skt.microservice.exception.DuplicatedProductEception;
+import org.springframework.stereotype.Component;
 
 import javax.persistence.EntityManager;
 import javax.persistence.ParameterMode;
@@ -11,6 +12,7 @@ import javax.persistence.PersistenceException;
 import javax.persistence.StoredProcedureQuery;
 import java.util.List;
 
+@Component
 public class ProductRepositoryImpl implements ProductRepository {
 
     @PersistenceContext
