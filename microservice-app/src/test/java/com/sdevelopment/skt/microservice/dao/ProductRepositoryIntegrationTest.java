@@ -30,7 +30,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 //@DataJpaTest
-//@ActiveProfiles("test")
+@ActiveProfiles("test")
 @SpringBootTest
 public class ProductRepositoryIntegrationTest {
 
@@ -44,22 +44,22 @@ public class ProductRepositoryIntegrationTest {
 
     }
 
-    @PersistenceContext
-    private EntityManager entityManager;
+    //@PersistenceContext
+    //private EntityManager entityManager;
 
     @Autowired
     private ProductRepository productRepository;
 
     @Test
     public void afterSavingCountShouldIncrease() {
-        //List<Product> before = productRepository.getAllProducts();
+        List<Product> before = productRepository.getAllProducts();
 
-        Product product = new Product();
+        /*Product product = new Product();
         product.setName("product test");
 
         productRepository.saveProduct(product);
 
-        List<Product> after = productRepository.getAllProducts();
+        List<Product> after = productRepository.getAllProducts();*/
 
         //assertThat(before.size())
                 //.isEqualTo(after.size() + 1);

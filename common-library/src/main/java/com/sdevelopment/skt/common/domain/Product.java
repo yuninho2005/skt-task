@@ -7,7 +7,6 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "products")
-//@Data
 @NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(name = "saveProduct",
                 procedureName = "insertproductsp",
