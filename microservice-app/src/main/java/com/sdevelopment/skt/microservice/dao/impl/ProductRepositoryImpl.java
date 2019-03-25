@@ -2,17 +2,13 @@ package com.sdevelopment.skt.microservice.dao.impl;
 
 import com.sdevelopment.skt.common.domain.Product;
 import com.sdevelopment.skt.microservice.dao.ProductRepository;
-import com.sdevelopment.skt.microservice.dao.ProductRepositoryCustom;
 import com.sdevelopment.skt.microservice.exception.DuplicatedProductEception;
-import org.hibernate.Session;
-import org.hibernate.exception.ConstraintViolationException;
-import org.hibernate.procedure.ProcedureCall;
-import org.springframework.transaction.annotation.Transactional;
 
-import javax.persistence.*;
-import java.sql.CallableStatement;
-import java.sql.SQLIntegrityConstraintViolationException;
-import java.sql.Types;
+import javax.persistence.EntityManager;
+import javax.persistence.ParameterMode;
+import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceException;
+import javax.persistence.StoredProcedureQuery;
 import java.util.List;
 
 public class ProductRepositoryImpl implements ProductRepository {
