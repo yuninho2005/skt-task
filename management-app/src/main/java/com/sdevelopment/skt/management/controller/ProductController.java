@@ -18,9 +18,12 @@ import java.util.Map;
 
 @Controller
 public class ProductController {
+    private ProductService productService;
 
     @Autowired
-    private ProductService productService;
+    public ProductController(ProductService productService) {
+        this.productService = productService;
+    }
 
     @RequestMapping("/create-product")
     public String createProduct(ModelMap model) {
