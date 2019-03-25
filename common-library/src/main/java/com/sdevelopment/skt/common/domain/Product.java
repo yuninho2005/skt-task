@@ -9,13 +9,13 @@ import java.io.Serializable;
 @Table(name = "products")
 @NamedStoredProcedureQueries({
         @NamedStoredProcedureQuery(name = "saveProduct",
-                procedureName = "insertproductsp",
+                procedureName = "InsertProduct",
                 parameters = {
-                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "_name", type = String.class)
+                        @StoredProcedureParameter(mode = ParameterMode.IN, name = "pname", type = String.class)
                 }),
 
         @NamedStoredProcedureQuery(name = "getAllProducts",
-                procedureName = "listproductssp",
+                procedureName = "GetAllProducts",
                 resultClasses = Product.class)
 })
 public class Product implements Serializable {
