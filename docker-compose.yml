@@ -1,21 +1,23 @@
 version: '3'
 services:
-  postgres:
-    image: postgres
+  mysql:
+    image: mysql:8.0.15
     environment:
-      POSTGRES_PASSWORD: sktouch
-    volumes:
-    - db-data:/var/lib/postgresql/data
+      MYSQL_USER: "root"
+      MYSQL_ROOT_PASSWORD: "skttask"
     ports:
-    - 5432:5432
+      - "3306:3306"
+    volumes:
+      - my-db:/var/lib/mysql
 
-  pgadmin4:
-    image: dpage/pgadmin4
+
+  myadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql
     ports:
       - 80:80
-    environment:
-      PGADMIN_DEFAULT_EMAIL: postgres@localhost
-      PGADMIN_DEFAULT_PASSWORD: s3cr3t
+
 
   rabbitmq:
     image: "rabbitmq:3.7.13-management-alpine"
@@ -44,8 +46,8 @@ services:
     hostname: management-app
 
 volumes:
-  db-data:
+  my-db:
     driver: local
 
-  rabbit-data:
+  db-data:
     driver: local
