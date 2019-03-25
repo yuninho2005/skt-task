@@ -18,7 +18,7 @@ public class ProductRepositoryImpl implements ProductRepository {
     @PersistenceContext
     private EntityManager em;
 
-    //@Transactional
+    @Override
     public void saveProduct(Product product) throws DuplicatedProductEception {
         try {
             StoredProcedureQuery query = em.createStoredProcedureQuery("InsertProduct");
@@ -37,6 +37,7 @@ public class ProductRepositoryImpl implements ProductRepository {
         }
     }
 
+    @Override
     public List<Product> getAllProducts() {
         StoredProcedureQuery query = em.createStoredProcedureQuery("GetAllProducts");
 
