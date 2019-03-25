@@ -55,4 +55,35 @@ public class Product implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        // null check
+        if (o == null) {
+            return false;
+        }
+
+        // this instance check
+        if (this == o) {
+            return true;
+        }
+
+        // instanceof Check and actual value check
+        if ((o instanceof Product) && (((Product) o).getName() == this.name)) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    @Override
+    public int hashCode() {
+        int prime = 31; // Odd prime commonly use to generate hashCode due to it's mathematical properties.
+        int result = 1;
+
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+
+        return result;
+    }
 }
