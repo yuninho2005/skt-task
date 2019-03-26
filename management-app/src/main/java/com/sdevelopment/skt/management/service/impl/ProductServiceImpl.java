@@ -47,17 +47,20 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getAllProducts() {
+        List<Product> products = null;
         Map<String, String> message = (Map<String, String>)rabbitTemplate.receiveAndConvert(receivingQueue);
 
-        ObjectMapper mapper = new ObjectMapper();
+        if(message != null) {
+            ObjectMapper mapper = new ObjectMapper();
 
-        String jsonInString = message.get("products");
+            String jsonInString = message.get("products");
 
-        List<Product> products = null;
-        try {
-            products = mapper.readValue(jsonInString, LinkedList.class);
-        } catch (IOException e) {
-            e.printStackTrace();
+
+            try {
+                products = mapper.readValue(jsonInString, LinkedList.class);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
         return products;
