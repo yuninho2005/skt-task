@@ -42,7 +42,7 @@ public class ManagementAppApplication {
         return BindingBuilder.bind(queue).to(exchange).with(receivingQueue);
     }
 
-    @Bean
+    /*@Bean
     SimpleMessageListenerContainer container(ConnectionFactory connectionFactory,
                                              MessageListenerAdapter listenerAdapter) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
@@ -55,7 +55,7 @@ public class ManagementAppApplication {
     @Bean
     MessageListenerAdapter listenerAdapter(ProductMessageListener receiver) {
         return new MessageListenerAdapter(receiver, "receiveMessage");
-    }
+    }*/
 
     public static void main(String[] args) {
         SpringApplication.run(ManagementAppApplication.class, args);

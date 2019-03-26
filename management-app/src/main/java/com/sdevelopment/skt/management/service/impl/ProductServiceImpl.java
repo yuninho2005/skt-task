@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -18,6 +19,9 @@ public class ProductServiceImpl implements ProductService {
 
     @Value("${spring.rabbitmq.savequeue}")
     private String sendingQueue;
+
+    @Value("${spring.rabbitmq.listqueue}")
+    private String receivingQueue;
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
@@ -43,6 +47,19 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public List<Product> getAllProducts() {
-        return null;
+        Map<String, String> message = (Map<String, String>)rabbitTemplate.receiveAndConvert(receivingQueue);
+
+        ObjectMapper mapper = new ObjectMapper();
+
+        String jsonInString = message.get("products");
+
+        List<Product> products = null;
+        try {
+            products = mapper.readValue(jsonInString, LinkedList.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return products;
     }
 }
