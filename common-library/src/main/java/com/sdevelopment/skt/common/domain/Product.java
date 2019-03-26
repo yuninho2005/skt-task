@@ -35,6 +35,10 @@ public class Product implements Serializable {
 
     }
 
+    public Product(String name) {
+        this.name = name;
+    }
+
     public Product(Integer id, String name) {
         this.id = id;
         this.name = name;
@@ -58,29 +62,27 @@ public class Product implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        // null check
-        if (o == null) {
-            return false;
-        }
-
         // this instance check
-        if (this == o) {
+        if (this == o)
             return true;
-        }
 
         // instanceof Check and actual value check
-        if ((o instanceof Product) && (((Product) o).getName() == this.name)) {
-            return true;
-        } else {
+        if(!(o instanceof Product))
             return false;
-        }
+
+        // Already confirmed that it's a product
+        Product p = (Product) o;
+
+        // Some object reference fields may legitimately contain null.
+        // This alternative may be faster if fields are ofter equals
+        return name.equals(p.getName()) || (name != null && name.equals(p.getName()));
 
     }
 
     @Override
     public int hashCode() {
-        int prime = 31; // Odd prime commonly use to generate hashCode due to it's mathematical properties.
-        int result = 1;
+        int prime = 31;  // Odd prime commonly use to generate hashCode due to it's mathematical properties.
+        int result = 17; // Any not zero value
 
         result = prime * result + ((name == null) ? 0 : name.hashCode());
 
