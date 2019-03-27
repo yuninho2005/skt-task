@@ -38,13 +38,6 @@ public class ProductController {
     public String listProducts(ModelMap model) {
         List<Product> products = productService.getAllProducts();
 
-        if(products == null)
-            products = new ArrayList<>();
-        Product p1 = new Product("Primero");
-        Product p2 = new Product("Segundo");
-        products.add(p1);
-        products.add(p2);
-
         model.addAttribute("products", products);
 
         return "listProducts";
