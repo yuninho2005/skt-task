@@ -10,6 +10,7 @@ import javax.persistence.ParameterMode;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceException;
 import javax.persistence.StoredProcedureQuery;
+import java.util.LinkedList;
 import java.util.List;
 
 @Component
@@ -39,10 +40,22 @@ public class ProductRepositoryImpl implements ProductRepository {
 
     @Override
     public List<Product> getAllProducts() {
+        List<Product> products = new LinkedList<>();
         StoredProcedureQuery query = em.createStoredProcedureQuery("GetAllProducts");
 
         query.execute();
 
-        return query.getResultList();
+        List<Object[]> results = query.getResultList();
+
+        results.stream().forEach((record) -> {
+            Product product = new Product();
+            String name = (String)record[1];
+
+            product.setName(name);
+
+            products.add(product);
+        });
+
+        return products;
     }
 }

@@ -55,4 +55,15 @@ public class ProductRepositoryIntegrationTest {
         productRepository.saveProduct(product);
 
     }
+
+    @Test
+    public void checkIfGetAllReturningObjects() {
+        List<Product> products = productRepository.getAllProducts();
+
+        if(products != null) {
+            if(products.size() > 0) {
+                Product product = products.get(0);
+            }
+        }
+    }
 }
