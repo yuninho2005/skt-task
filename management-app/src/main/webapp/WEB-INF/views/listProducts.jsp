@@ -9,15 +9,22 @@
 
         <h3>List of products</h3>
 
-        <c:forEach var="product" items="${products}">
+
 
             <table>
                 <tr class="tr1">
-                    <td>Name</td>
+                    <th>Number</th>
+                    <th>Name</th>
+                </tr>
+
+                <c:forEach var="product" items="${products}" varStatus="loop">
+                <tr>
+                    <td>${loop.index}</td>
                     <td>${product.name}</td>
                 </tr>
+                </c:forEach>
             </table>
-        </c:forEach>
+
     </div>
 </div>
 </body>

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -36,6 +37,13 @@ public class ProductController {
     @RequestMapping("/products")
     public String listProducts(ModelMap model) {
         List<Product> products = productService.getAllProducts();
+
+        if(products == null)
+            products = new ArrayList<>();
+        Product p1 = new Product("Primero");
+        Product p2 = new Product("Segundo");
+        products.add(p1);
+        products.add(p2);
 
         model.addAttribute("products", products);
 
