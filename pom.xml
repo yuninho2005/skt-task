@@ -6,7 +6,43 @@
 
     <groupId>com.sdevelopment.skt</groupId>
     <artifactId>skt-task</artifactId>
+
+    <packaging>pom</packaging>
+
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>common-library</module>
+        <module>cloud-config-server</module>
+        <module>management-app</module>
+        <module>microservice-app</module>
+    </modules>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.7.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-cloud.version>Edgware.SR5</spring-cloud.version>
+    </properties>
+
+    <dependencies>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

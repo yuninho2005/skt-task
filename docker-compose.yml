@@ -1,0 +1,77 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:8.0.15
+    environment:
+      MYSQL_USER: "root"
+      MYSQL_ROOT_PASSWORD: "skttask"
+    ports:
+      - "3306:3306"
+    volumes:
+      - my-db:/var/lib/mysql
+
+
+  myadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: mysql
+    ports:
+      - 80:80
+
+
+  rabbitmq:
+    image: "rabbitmq:3.7.13-management-alpine"
+    hostname: "rabbit"
+    ports:
+      - "9090:15672"
+      - "5677:5672"
+    labels:
+      NAME: "rabbitmq"
+    volumes:
+      - db-data:/var/lib/rabbitmq/mnesia/rabbit@rabbit
+
+
+  cloudconfigserver:
+    image: skt/cloud-config-server:latest
+    container_name: tomcat-cloud-config-server
+    ports:
+      - 8888:8888
+    hostname: cloud-config-server
+
+  magementapp:
+    image: skt/management-app:latest
+    container_name: management-app-server
+    ports:
+      - 8081:8080
+    hostname: management-app
+    restart: on-failure
+    depends_on:
+      - "rabbitmq"
+      - "cloudconfigserver"
+    links:
+      - "rabbitmq"
+      - "cloudconfigserver"
+
+
+  microserviceapp:
+    image: skt/microservice-app:latest
+    container_name: microservice-app-server
+    ports:
+      - 8082:8080
+    hostname: management-app
+    restart: on-failure
+    depends_on:
+      - "rabbitmq"
+      - "cloudconfigserver"
+      - "mysql"
+    links:
+      - "rabbitmq"
+      - "cloudconfigserver"
+      - "mysql"
+
+volumes:
+  my-db:
+    driver: local
+
+  db-data:
+    driver: local
