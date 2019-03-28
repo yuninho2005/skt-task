@@ -53,6 +53,6 @@ public class ProductController {
 
         productService.saveProduct(product);
 
-        return "listProducts";
+        return "index";
     }
 }

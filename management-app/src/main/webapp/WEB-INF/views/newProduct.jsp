@@ -21,6 +21,11 @@
                 </tr>
             </table>
         </form:form>
+
+        </br>
+        <div>
+            <strong><a href="/">Home</a></strong>
+        </div>
     </div>
 </div>
 </body>

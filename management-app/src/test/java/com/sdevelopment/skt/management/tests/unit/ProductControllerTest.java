@@ -53,7 +53,7 @@ public class ProductControllerTest {
     public void createProductFormSubmitSuccess() throws Exception {
         this.mockMvc.perform(post("/product-form").param("name","New Product"))
                     .andExpect(status().isOk())
-                    .andExpect(view().name("listProducts"));
+                    .andExpect(view().name("index"));
     }
 
     @Test
