@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.persistence.PersistenceException;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -47,8 +48,8 @@ public class ProductRepositoryIntegrationTest {
                 .isEqualTo(after.size());
     }
 
-    @Test(expected = DuplicatedProductEception.class)
-    public void ifSameNameShouldThrowException() throws DuplicatedProductEception {
+    @Test(expected = PersistenceException.class)
+    public void ifSameNameShouldThrowException() {
         Product product = new Product();
         product.setName("product test");
 
@@ -60,10 +61,7 @@ public class ProductRepositoryIntegrationTest {
     public void checkIfGetAllReturningObjects() {
         List<Product> products = productRepository.getAllProducts();
 
-        if(products != null) {
-            if(products.size() > 0) {
-                Product product = products.get(0);
-            }
-        }
+        if(products != null)
+            assertThat(products.size() > 0);
     }
 }
